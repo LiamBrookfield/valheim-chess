@@ -1,3 +1,12 @@
+# Liam's Valheim Mod
+
+Currently this is early days, the only crucial point to note at the moments is that in unity engine:
+assemblly_valheim and
+assemblly_util
+have auto reference set to OFF to prevent namespace issues.
+
+## Below is the default JotunModStub README
+
 # JötunnModStub
 
 A Valheim mod stub project using [Jötunn](https://github.com/Valheim-Modding/Jotunn) including build tools and a basic Unity project stub.
