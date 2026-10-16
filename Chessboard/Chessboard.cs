@@ -9,6 +9,8 @@ namespace Chessboard
 {
     internal class Chessboard : MonoBehaviour, Interactable, Hoverable
     {
+        private ChessGUI chessGUI = new ChessGUI();
+
         public string GetHoverName()
         {
             return "Chessboard";
@@ -26,6 +28,10 @@ namespace Chessboard
 
         public bool Interact(Humanoid user, bool hold, bool alt)
         {
+            MessageHud.instance.ShowMessage(MessageHud.MessageType.Center, "Chess interaction looking good");
+
+            chessGUI.MakeChessPanel();
+
             return true;
         }
 
