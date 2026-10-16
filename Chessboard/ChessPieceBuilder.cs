@@ -48,6 +48,12 @@ namespace Chessboard
                 chessPrefab.AddComponent<ZNetView>();
             }
 
+            //Add my own chessboard component
+            if (chessPrefab.GetComponent<Chessboard>() == null)
+            {
+                chessPrefab.AddComponent<Chessboard>();
+            }
+
             Jotunn.Logger.LogInfo("Now configuring chessboard piece.");
             // Configure the buildable piece.
             PieceConfig chessConfig = new PieceConfig();
